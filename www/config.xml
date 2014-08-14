@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+    xmlns:gap       = "http://phonegap.com/ns/1.0"
+    xmlns:android   = "http://schemas.android.com/apk/res/android"
+    id              = "com.lumberg.greeeaaat"
+    version         = "1.0.0">
+    <name>Lemonaid</name>
+    <description>
+        A sales app made by Int Elegance for Hairy Lemon.
+    </description>
+    <author email="intelegancenz@gmail.com">
+       Int Elegance (Marama Callan, Jerhameel Lopez and Cindy Teh
+    </author>
+    <content src="index.html" />
+	<preference name="orientation" value="landscape" />
+    <access origin="*" />
+	<icon src="../www/img/lalogo.png"   gap:platform="android"    gap:qualifier="ldpi" />
+    <icon src="../www/img/lalogo.png"   gap:platform="android"    gap:qualifier="mdpi" />
+    <icon src="../www/img/lalogo.png"   gap:platform="android"    gap:qualifier="hdpi" />
+    <icon src="../www/img/lalogo.png"  gap:platform="android"    gap:qualifier="xhdpi" />
+</widget>
