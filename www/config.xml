@@ -18,4 +18,12 @@
     <icon src="../www/img/lalogo.png"   gap:platform="android"    gap:qualifier="mdpi" />
     <icon src="../www/img/lalogo.png"   gap:platform="android"    gap:qualifier="hdpi" />
     <icon src="../www/img/lalogo.png"  gap:platform="android"    gap:qualifier="xhdpi" />
+	
+	<gap:splash src="../www/img/splash.png" gap:platform="android" gap:qualifier="ldpi" />
+	<gap:splash src="../www/img/splash.png" gap:platform="android" gap:qualifier="mdpi" />
+	<gap:splash src="../www/img/splash.png" gap:platform="android" gap:qualifier="hdpi" />
+	<gap:splash src="../www/img/splash.png" gap:platform="android" gap:qualifier="xhdpi" />
+	<gap:splash src="../www/img/splash.png" gap:platform="android" gap:qualifier="fr-xhdpi" />
+	<gap:splash src="portrait-xxhdpi.png" gap:platform="android" gap:qualifier="port-xxhdpi" />
+	<gap:splash src="landscape-../www/img/splash.png" gap:platform="android" gap:qualifier="land-xxhdpi" />
 </widget>

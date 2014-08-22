@@ -1,60 +1,55 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-        <meta name="msapplication-tap-highlight" content="no" />
-        <title>Lemonaid</title>
-    </head>
-    <body>
-        <div id="page">
-            <div id="logo" class ="logo">
-            </div>
-            <div id="header" class ="header">
-            </div>
-            <div id="menu" class ="menu">
-                <p>
-                <h1>Menu</h1>
-                <div class="menuItem">
-                <a href="../www/login.html"><img src="../www/img/bttn/login.png" alt="Login" class="menuLink"></a>
-                </div>
-                <div class="menuItem">
-                <a href="../www/index.html"><img src="../www/img/bttn/home.png" alt="Home" class="menuLink"></a><br/>
-                </div>
-                <div class="menuItem">
-                <a href="../www/portfolioHome.html"><img src="../www/img/bttn/portfolio.png" alt="Portfolio Home" class="menuLink"></a><br/>
-                </div>
-                <div class="menuItem">
-                <a href="../www/notes.html"><img src="../www/img/bttn/notes.png" alt="Notes" class="menuLink"></a><br/>
-                </div>
-                <div class="menuItem">
-                <a href="../www/links.html"><img src="../www/img/bttn/links.png" alt="Links" class="menuLink"></a><br/></div>
-                <div class="menuItem">
-                <a href="../www/sync.html"><img src="../www/img/bttn/sync.png" alt="Sync Data" class="menuLink"></a><br/>
-                </div>
-                <div class="menuItem">
-                <a href="../www/settings.html"><img src="../www/img/bttn/settings.png" alt="Settings" class="menuLink"></a><br/>
-                </div>
-                <div class="menuItem">
-                <a href="../www/abouthl.html"><img src="../www/img/bttn/aboutHL.png" alt="About Hairy Lemon" class="menuLink"></a><br/>
-                </div>
-                <div class="menuItem">
-                <a href="../www/aboutapp.html"><img src="../www/img/bttn/aboutLA.png" alt="About Lemonaid" class="menuLink"></a><br/>
-                </div>
-            </div>
-            <div id="content" class ="content">
-                <h1>Here's the Content</h1>
-                <p>
-                    <a href="../www/test.html">Check Test Page</a>
-                </p>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/scripts.js"></script>
-        <script type="text/javascript">
-                app.initialize();
-        </script>
-    </body>
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<title>Lemonaid</title> 
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+		<meta content="utf-8" http-equiv="encoding"/>
+		<meta name="format-detection" content="telephone=no" />
+		<meta id="testViewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0"/>
+
+		<link rel="stylesheet" href="css/jquery.mobile.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+		<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.0rc2.min.js"></script>
+		<script type="text/javascript" src="js/menu.js"></script>
+	</head> 
+<body> 
+
+<div id="home" class="page">
+
+	<div data-role="header"  id="header" class ="header">
+	</div><!-- /header -->
+	<div data-role="header"  id="logo" class ="logo"  onclick="hide()" style="display:none;">
+	</div><!-- /header -->
+
+	<div id="menu" class="menu" style="display:none;" onclick="hide()">
+		<a href="../www/login.html"><img src="../www/img/bttn/login.png" alt="Login" class="menuLink"/></a>
+		<a href="../www/index.html"><img src="../www/img/bttn/home.png" alt="Home" class="menuLink"/></a>
+		<a href="../www/portfoliohome.html"><img src="../www/img/bttn/portfolio.png" alt="Portfolio Home" class="menuLink"/></a>
+		<a href="../www/notes.html"><img src="../www/img/bttn/notes.png" alt="Notes" class="menuLink"/></a>
+		<a href="../www/links.html"><img src="../www/img/bttn/links.png" alt="Links" class="menuLink"/></a>
+		<a href="../www/sync.html"><img src="../www/img/bttn/sync.png" alt="Sync Data" class="menuLink"/></a>
+		<a href="../www/settings.html"><img src="../www/img/bttn/settings.png" alt="Settings" class="menuLink"/></a>
+		<a href="../www/hairylemon.html"><img src="../www/img/bttn/hairylemon.png" alt="About Hairy Lemon" class="menuLink"/></a>
+		<a href="../www/lemonaid.html"><img src="../www/img/bttn/lemonaid.png" alt="About Lemonaid" class="menuLink"/></a>
+	</div>
+	<div data-role="page" class="pages" id="home">
+		<div class="content" id="content">
+			<h1>Here's the Content</h1>
+			<p>
+				Paragraph. Words and such!
+				<br></br>
+				Swing the lead crow's nest pirate jury mast ye hogshead overhaul carouser scurvy scallywag. Mutiny piracy cutlass galleon main sheet Barbary Coast Cat o'nine tails lass tack booty. Hands ballast wench bring a spring upon her cable holystone lanyard stern pressgang Letter of Marque barkadeer. 
+				<br></br>
+				Pink hands trysail brig barque hail-shot swing the lead black jack dance the hempen jig aye. Tackle to go on account crow's nest mizzen draft landlubber or just lubber nipper loaded to the gunwalls doubloon pressgang. Boatswain handsomely clap of thunder main sheet dance the hempen jig rigging driver hardtack hornswaggle loaded to the gunwalls. 
+				<br></br>
+				Spyglass pink hempen halter Pieces of Eight marooned Buccaneer wench splice the main brace Yellow Jack bilge rat. Log lugsail reef sails hang the jib square-rigged yo-ho-ho tackle Sail ho hogshead draft. Bilge long clothes doubloon yo-ho-ho yard parley Davy Jones' Locker bilged on her anchor crack Jennys tea cup Arr. 
+			</p>
+		</div><!-- /content -->
+	</div><!-- /page -->
+</div>
+<script type="text/javascript">
+</script>
+</body>
 </html>
