@@ -1,23 +1,79 @@
-<!DOCTYPE html> 
-<html> 
-	<head> 
-		<title>Lemonaid</title> 
-	</head> 
-<body> 
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lemonaid</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<!--<  Linked files  >-->
+		<script src="js/jquery-1.7.1.js"></script>
+		<script src="js/jquery.animate-enhanced.js"></script>
+		<script src="js/slidingview.js"></script>
+		<script src="js/iscroll.js"></script>
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+<!--<  Scripts to run on load of file  >-->
+		<script>
+			$(document).ready( function() {
+				//Setup the ViewNavigator
+				window.setTimeout( "new SlidingView( 'sidebar', 'body' );", 7);
+				window.setTimeout( "document.getElementById('sidebar').style.display = 'block';", 7);
+			} );
+			
+			var myScroll;
+			function loaded() {
+				window.setTimeout( "myScroll = new iScroll('wrapper');", 7);
+			}
+		    function doOnOrientationChange()
+		    {
+				location.reload(true);
+			}
+			document.addEventListener('touchmove', function(e){ e.preventDefault(); });
+			window.addEventListener('orientationchange', doOnOrientationChange);
+			document.addEventListener('DOMContentLoaded', loaded, false);
+		</script>
+<!--<  Styling to be configured on load  >-->
+		<style>
+			#sidebar { background-color: white;	display: none;}
+			#body { background-color: white; }
+			#wrapper { position:absolute; z-index:1; top: 0px; bottom:0px; left:0; width:100%; }
+			#scroller { position:absolute; z-index:1; -webkit-touch-callout:none; -webkit-tap-highlight-color:rgba(0,0,0,0); width:100%; }
+		</style>
+	</head>
+	<body>
+<!--<  Menu information for slide on menu  >-->
+		<div class="slidingview_wrapper">
+			<div id="sidebar">
+				<a href="../www/index.html"><img src="../www/img/lalogo.png" alt="Home" id="logo" class="logo"/></a>
+				<a href="../www/login.html"><img src="../www/img/bttn/login.png" alt="Login" class="menuLink"/></a>
+				<a href="../www/index.html"><img src="../www/img/bttn/home.png" alt="Home" class="menuLink"/></a>
+				<a href="../www/portfolio.html"><img src="../www/img/bttn/portfolio.png" alt="Portfolio" class="menuLink"/></a>
+				<a href="../www/notes.html"><img src="../www/img/bttn/notes.png" alt="Notes" class="menuLink"/></a>
+				<a href="../www/links.html"><img src="../www/img/bttn/links.png" alt="Links" class="menuLink"/></a>
+				<a href="../www/sync.html"><img src="../www/img/bttn/sync.png" alt="Sync Data" class="menuLink"/></a>
+				<a href="../www/settings.html"><img src="../www/img/bttn/settings.png" alt="Settings" class="menuLink"/></a>
+				<a href="../www/hairylemon.html"><img src="../www/img/bttn/hairylemon.png" alt="About Hairy Lemon" class="menuLink"/></a>
+				<a href="../www/lemonaid.html"><img src="../www/img/bttn/lemonaid.png" alt="About Lemonaid" class="menuLink"/></a>
+			</div>
 
-<div id="home" class="page">
-	<div data-role="page" class="pages" id="home">
-		<div class="content" id="content">
-		
-		
-			<h1>Settings Content</h1>
-			<p>
-				Paragraph. Words and such!
-			</p>
-			
-			
-		</div><!-- /content -->
-	</div><!-- /page -->
+<!--<  Starting information for content.  >-->
+			<div id="body">
+				<div id="wrapper" style="overflow: hidden;">
+				<div id="scroller" style="transition: 0ms; -webkit-transition: 0ms; transform-origin: 0px 0px 0px 0px; position: absolute; top: 0px; left: 0px;">
+				<div id="header" class ="header"></div>
+				
+<!-- *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~* -->
+<!-- *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*  START OF CONTENT *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~* -->
+<!-- *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~* -->
+
+<div id="contentsettings">
+<h1>Settings Placeholder</h1>
+<img src="../www/img/oops.png" alt="Home" class="oopsimage" style="width: 230px; height: 230px;"/>
 </div>
-</body>
+
+<!-- *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~* -->
+<!-- *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*   END OF CONTENT  *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~* -->
+<!-- *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~* -->
+				</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

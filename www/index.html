@@ -14,6 +14,7 @@
 			$(document).ready( function() {
 				//Setup the ViewNavigator
 				window.setTimeout( "new SlidingView( 'sidebar', 'body' );", 7);
+				window.setTimeout( "document.getElementById('sidebar').style.display = 'block';", 7);
 			} );
 			
 			var myScroll;
@@ -30,7 +31,7 @@
 		</script>
 <!--<  Styling to be configured on load  >-->
 		<style>
-			#sidebar { background-color: white;	}
+			#sidebar { background-color: white;	display: none;}
 			#body { background-color: white; }
 			#wrapper { position:absolute; z-index:1; top: 0px; bottom:0px; left:0; width:100%; }
 			#scroller { position:absolute; z-index:1; -webkit-touch-callout:none; -webkit-tap-highlight-color:rgba(0,0,0,0); width:100%; }
@@ -61,8 +62,22 @@
 <!-- *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~* -->
 <!-- *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*  START OF CONTENT *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~* -->
 <!-- *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~* -->
-<h1>Swipe left to open the menu</h1>
-
+<div id="contentindex">
+<table id="homebuttons">
+<tr>
+<td><a href="../www/portfolio.html"><img src="../www/img/bttn/portfolioL.png" alt="Portfolio" class="buttonLink"/></a></td>
+<td><a href="../www/notes.html"><img src="../www/img/bttn/notesL.png" alt="Notes" class="buttonLink"/></a></td>
+<td><a href="../www/links.html"><img src="../www/img/bttn/linksL.png" alt="Links" class="buttonLink"/></a></td>
+</tr>
+<tr>
+<td><a href="../www/login.html"><img src="../www/img/bttn/loginL.png" alt="Login" class="buttonLink"/></a></td>
+<td><a href="../www/sync.html"><img src="../www/img/bttn/syncL.png" alt="Sync Data" class="buttonLink"/></a></td>
+<td><a href="../www/settings.html"><img src="../www/img/bttn/settingsL.png" alt="Settings" class="buttonLink"/></a></td>
+</tr>
+</table>
+<p class="centeredText">Swipe right to open the menu<br/>
+Best viewed in landscape</p>
+</div>
 <!-- *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~* -->
 <!-- *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*   END OF CONTENT  *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~* -->
 <!-- *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~* -->
